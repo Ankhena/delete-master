@@ -18,6 +18,8 @@
 
 Теперь он станет таким
 
+[Issues**1**](https://github.com/Ankhena/delete-master/issues)
+
 ```html
   @@include("source/html/components/card.html")
 ```
@@ -29,6 +31,9 @@
 #### Объявление переменной
 
 1. Локальное
+
+https://yoksel.github.io/html-tree/
+
 
 ```
   @@include("source/html/components/card.html", {
