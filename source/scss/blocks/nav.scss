@@ -1,0 +1,19 @@
+@mixin _media-nav {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+  padding-left: clampvw(17, 40);
+  padding-right: clampvw(17, 40);
+}
+
+.nav--opened {
+  //
+}

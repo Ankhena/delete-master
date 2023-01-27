@@ -1,0 +1,17 @@
+//$font-main: "Roboto Slab",  sans-serif;
+$font-main: "roboto flex", roboto, sans-serif;
+$font-title: $font-main;
+$font-btn: $font-main;
+$font-input: $font-main;
+
+$input-list: 'input[type="text"], input[type="email"], input[type="tel"], input[type="url"], input[type="date"], input[type="search"], input[type="password"], input[type="number"], input[type="time"], input[type="month"], input[type="week"]';
+
+//extra large
+$elg: 1526px;
+//$lg: 900px; //   !!!!!!!!!  переключается 1000 (чтобы на 1024 был уже десктоп)
+$lg: 900px; //   !!!!!!!!!  переключается 1000 (чтобы на 1024 был уже десктоп)
+$md: 720px; //
+$sm: 690px; // + footer, what-it-cpa, mean-for-you
+$esm: 360px; //
+
+// + 480px footer__social

@@ -1,0 +1,84 @@
+.intro {
+  color: var(--color);
+  //padding-top: calc(clampvw(40, 94) + var(--header-height) - var(--block-radius));
+  padding-bottom: clampvw(60, 180);
+  background: var(--color-inverse);
+  border-radius: var(--block-radius) var(--block-radius) 0 0;
+}
+
+.intro--blogger {
+  padding-bottom: var(--block-radius);
+}
+
+.intro__inner {
+  //padding-top: calc(clampvw(40, 94) + var(--header-height) - var(--block-radius));
+  padding-top: calc(clampvw(40, 94) + var(--block-radius)/3);
+  padding-bottom: clampvw(38, 60);
+}
+
+.intro__description {
+  max-width: clampvw(435, 851);
+  margin-bottom: 3.5em;
+  font-size: clampvw(12, 31);
+  line-height: 1.4;
+
+  span {
+    display: inline-block;
+    background: var(--bright);
+    //border-radius: clampvw(10, 20);
+    border-radius: 0.769em;
+    border: 1px solid var(--bright);
+    color: var(--color-inverse);
+    box-shadow: 0.5ex 0 0 0 var(--bright), -0.5ex 0 0 0 var(--bright);
+  }
+}
+
+.intro__why-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: clampvw(8, 50);
+  //max-width: 1318px;
+  width: fit-content;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.intro__why {
+  max-width: 406px;
+  padding: clampvw(107, 404) clampvw(12, 40) clampvw(12, 46);
+  font-size: clampvw(10, 24);
+  line-height: 1.4;
+  border-radius: clampvw(10, 74);
+  background: var(--color) var(--bgi) no-repeat top center / 100% auto;
+  color: var(--color-inverse);
+  text-align: center;
+
+  &--market {
+    --color: #4523e7;
+    --bgi: url("../img/why-1.svg");
+  }
+
+  &--cpa {
+    --color: #6123e7;
+    --bgi: url("../img/why-2.svg");
+  }
+
+  &--people {
+    --color: #8938ff;
+    --bgi: url("../img/why-3.svg");
+  }
+  &--lead {
+    --color: #4523e7;
+    --bgi: url("../img/why-4.svg");
+  }
+
+  &--installation {
+    --color: #6123e7;
+    --bgi: url("../img/why-5.svg");
+  }
+
+  &--click {
+    --color: #8938ff;
+    --bgi: url("../img/why-6.svg");
+  }
+}

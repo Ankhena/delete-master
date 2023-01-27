@@ -1,0 +1,37 @@
+@use "sass:math"; // для подключения модуля math в scss
+//
+@import "_variables";
+@import "_mixins";
+@import "fonts";
+//
+@import "root";
+@import "main";
+//
+@import "blocks/btns";
+//
+@import "blocks/logo";
+@import "blocks/social";
+//
+@import "blocks/wrapper";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn-toggle";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/form";
+@import "blocks/main-block";
+//
+@import "blocks/blogger";
+@import "blocks/partner";
+@import "blocks/floating-menu";
+@import "blocks/intro";
+@import "blocks/what-it-cpa";
+@import "blocks/mean-for-you";
+@import "blocks/work-scheme";
+@import "blocks/cpa-vs-cpp";
+@import "blocks/how-to-start";
+//
+@import "blocks/start-up-help";
+@import "blocks/connecting";
+//
+@import "blocks/animations";

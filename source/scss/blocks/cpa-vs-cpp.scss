@@ -1,0 +1,132 @@
+.cpa-vs-cpp {
+  padding-top: calc(var(--block-radius) + clampvw(60, 175));
+  padding-bottom: clampvw(64, 162);
+  //margin-bottom: calc(0px - var(--block-radius));
+  border-radius: 0 0 var(--block-radius) var(--block-radius);
+  background: var(--color-inverse) url("../img/cpa-vs-cpp-bg.svg") no-repeat top center / 100% auto;
+  color: var(--color);
+}
+
+.cpa-vs-cpp__title {
+  margin-bottom: 0.7em;
+  font-size: clampvw(34, 104);
+}
+
+.cpa-vs-cpp__table {
+  padding: 16px clampvw(16, 50);
+  border-radius: clampvw(20, 80);
+  border-collapse: separate;
+  border-spacing: clampvw(30, 60) clampvw(5, 40);
+  background: var(--color-inverse);
+  overflow: hidden;
+
+  @include _sm-max {
+    display: grid;
+    row-gap: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-spacing: 0;
+  }
+
+  tbody {
+
+    @include _sm-max {
+      display: contents;
+    }
+  }
+
+  tr {
+
+    @include _sm-max {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 8px;
+      column-gap: 18px;
+    }
+  }
+
+  th {
+    font-weight: 400;
+
+    &:first-child {
+
+      @include _sm-max {
+        display: none;
+      }
+    }
+  }
+
+  td {
+    font-size: clampvw(11, 24);
+
+    &:first-child {
+      grid-column: 1/-1;
+
+      @include _sm {
+        grid-column: revert;
+      }
+    }
+
+    &:not(:first-child) {
+      text-align: center;
+    }
+
+    .bright {
+      font-weight: 700;
+      color: var(--bright);
+    }
+  }
+
+  .td-false,
+  .td-true {
+    font-size: clampvw(14, 27);
+  }
+}
+
+.cpa-vs-cpp__table--grid3 {
+  tr {
+
+    @include _sm-max {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 8px;
+      column-gap: 18px;
+    }
+  }
+
+  .td-true {
+    color: var(--bright);
+    white-space: nowrap;
+  }
+}
+
+@mixin cpa-vs-cpp-span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  padding: 0.35em 2.66em;
+  font-size: clampvw(12, 24);
+  border-radius: 100vw;
+  text-align: center;
+
+  @include _sm-max {
+    padding: 0.35em 2.66em;
+  }
+
+  .cpa-vs-cpp__table--grid3 & {
+    padding-left: 0.9em;
+    padding-right: 0.9em;
+  }
+}
+
+.cpa-vs-cpp__bright {
+  @include cpa-vs-cpp-span;
+  background: var(--bright);
+  color: var(--color-inverse);
+}
+
+.cpa-vs-cpp__regular {
+  @include cpa-vs-cpp-span;
+  border: 0.533333px solid rgba(13, 10, 93, 0.1);
+  border-radius: 100vw;
+}
